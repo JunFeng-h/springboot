@@ -20,5 +20,7 @@ public class MySpringBootApplication
     //main方法是程序入口 run参数是引导类的字节码文件
     public static void main(String[] args) {
     SpringApplication.run(MySpringBootApplication.class);
+
+        System.out.println("这是新添加的一句话");
 }
 }
