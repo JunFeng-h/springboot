@@ -1,0 +1,71 @@
+#tomcat启动服务器端口号
+server:
+  port: 8081
+  #当前web应用名称
+  servlet:
+    context-path: /demo
+
+#对象配置实例
+person:
+  name: hjf
+  age: 18
+  addr: henansheng
+  cities:
+    - beijing
+    - shanghai
+    - nanyang
+    - tianjin
+    - wuhan
+  map:
+    key1: value1
+    key2: value2
+
+#普通集合
+my:
+  cities:
+    - beijing
+    - shanghai
+    - nanyang
+    - tianjin
+
+#对象数据集合
+student:
+  - name: tom
+    age: 18
+    addr: beijing
+  - name: hjf
+    age: 68
+    addr: wuhan
+
+#map集合数据
+map:
+  key1: value1
+  key2: value2
+
+#数据库相关配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springbootest?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: root
+    password: 123456
+    #配置springdataJPA的信息
+  jpa:
+    database: MySQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+
+#配置mybatis的信息
+#mybatis:
+  #加载mybatis映射文件
+#  mapper-locations: classpath:mapper/*Mapper.xml
+  #pojo配置别名
+ # type-aliases-package: com.hjf.domain
+  #配置redis数据库信息
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
